@@ -75,8 +75,8 @@ export default function Navigation() {
         aria-label="Primary"
         style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: 74 }}
       >
-        <Link href="/" aria-label="Formal Grand Resources — home" style={{ color: "var(--text-1)" }}>
-          <FgrLogo />
+        <Link href="/" aria-label="Formal Grand Resources — home">
+          <FgrLogo priority height={38} />
         </Link>
 
         {/* Desktop nav */}

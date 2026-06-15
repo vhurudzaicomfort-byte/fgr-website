@@ -208,6 +208,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   outline: 2px solid var(--azure); outline-offset: 2px; border-radius: 4px;
 }
 
+/* ─── Logo (actual artwork, theme-aware reversal) ─── */
+.fgr-logo { display: block; object-fit: contain; }
+/* On dark surfaces, reverse the navy+gold artwork to a clean white mark */
+.fgr-logo--onDark { filter: brightness(0) invert(1); }
+[data-theme="dark"] .fgr-logo--auto { filter: brightness(0) invert(1); }
+
 /* ─── Marquee ─── */
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .marquee-track { display: flex; width: max-content; animation: marquee 32s linear infinite; }

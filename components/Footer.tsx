@@ -11,9 +11,7 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Brand */}
           <div style={{ maxWidth: 320 }}>
-            <div style={{ color: "#fff" }}>
-              <FgrLogo />
-            </div>
+            <FgrLogo tone="light" height={38} />
             <p
               style={{
                 marginTop: 20,
